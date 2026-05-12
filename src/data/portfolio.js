@@ -1,3 +1,11 @@
+
+import profileAvatar from "../assets/Profile.avif"
+import visitorImage from "../assets/VisitorManagment.png"
+import egramImage from "../assets/digital_egrampanchayat.jpg"
+import supermallImage from "../assets/supermall.png"
+import portfolio3dImage from "../assets/3d_portfolio.jpg"
+import resumePDF from "../assets/gautamshende.pdf"
+
 export const navItems = [
   { id: "home", label: "Home" },
   { id: "about", label: "About" },
@@ -15,8 +23,8 @@ export const profile = {
   location: "Nagpur, Maharashtra, India",
   email: "gautamshende144@gmail.com",
   phone: "+91 8459251480",
-  resume: "src/assets/gautamshende.pdf",
-  avatar: "src/assets/Profile.avif",
+  resume: resumePDF,
+  avatar: profileAvatar,
   github: "https://github.com/Gautam-Shende",
   linkedin: "https://www.linkedin.com/in/gautam-shende-262803290/",
   instagram: "https://www.instagram.com/gautamshende_/",
@@ -65,7 +73,7 @@ export const projects = [
     category: "MERN Stack Application",
     description:
       "A smart visitor management system with visitor approvals, authentication, dashboard analytics, and secure entry tracking workflows.",
-    image: "src/assets/VisitorManagment.png",
+    image: visitorImage,
     accent: "from-sky-500 to-cyan-400",
     tech: [
       "React",
@@ -88,7 +96,7 @@ export const projects = [
     category: "Government Service Platform",
     description:
       "A digital platform for rural governance services including certificates, announcements, grievance management, and citizen access.",
-    image: "src/assets/digital_egrampanchayat.jpg",
+    image: egramImage,
     accent: "from-emerald-500 to-lime-400",
     tech: [
       "React",
@@ -110,7 +118,7 @@ export const projects = [
     category: "E-Commerce Platform",
     description:
       "A modern multi-vendor shopping platform where merchants can manage products and customers can explore, order, and manage carts seamlessly.",
-    image: "/src/assets/supermall.png",
+     image: supermallImage,
     accent: "from-indigo-500 to-purple-500",
     tech: [
       "React",
@@ -133,7 +141,7 @@ export const projects = [
     category: "Frontend Portfolio Experience",
     description:
       "An interactive 3D portfolio with smooth animations, modern UI, dark mode, and immersive developer showcase experience.",
-    image: "src/assets/3d_portfolio.jpg",
+     image: portfolio3dImage,
     accent: "from-violet-500 to-fuchsia-500",
     tech: [
       "React",
