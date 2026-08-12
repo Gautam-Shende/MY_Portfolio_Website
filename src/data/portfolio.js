@@ -1,10 +1,10 @@
-
-import profileAvatar from "../assets/Profile.avif"
-import visitorImage from "../assets/VisitorManagment.png"
-import egramImage from "../assets/digital_egrampanchayat.jpg"
-import supermallImage from "../assets/supermall.png"
-import portfolio3dImage from "../assets/3d_portfolio.jpg"
-import resumePDF from "../assets/gautamshende.pdf"
+import profileAvatar from "../assets/Profile.avif";
+import visitorImage from "../assets/VisitorManagment.png";
+import collegeERPImage from "../assets/college-erp-software-services.png";
+import egramImage from "../assets/digital_egrampanchayat.jpg";
+import supermallImage from "../assets/supermall.png";
+import portfolio3dImage from "../assets/3d_portfolio.jpg";
+import resumePDF from "../assets/gautamshende.pdf";
 
 export const navItems = [
   { id: "home", label: "Home" },
@@ -14,12 +14,13 @@ export const navItems = [
   { id: "experience", label: "Experience" },
   { id: "education", label: "Education" },
   { id: "contact", label: "Contact" },
-]
+];
 
 export const profile = {
   name: "Gautam Shende",
   role: "MERN Stack Developer",
-  tagline: "I build fast, thoughtful web applications with React, Node.js, Web3 tooling, and a healthy obsession for clean interfaces.",
+  tagline:
+    "I build fast, thoughtful web applications with React, Node.js, Web3 tooling, and a healthy obsession for clean interfaces.",
   location: "Nagpur, Maharashtra, India",
   email: "gautamshende144@gmail.com",
   phone: "+91 8459251480",
@@ -28,20 +29,26 @@ export const profile = {
   github: "https://github.com/Gautam-Shende",
   linkedin: "https://www.linkedin.com/in/gautam-shende-262803290/",
   instagram: "https://www.instagram.com/gautamshende_/",
-  leetcode: "https://leetcode.com/u/GautamShende/"
-}
+  leetcode: "https://leetcode.com/u/GautamShende/",
+};
 
 export const stats = [
-  { value: "10+", label: "Projects Built" },
-  { value: "20+", label: "DSA Problems" },
-  { value: "40+", label: "Students Taught" },
-  { value: "7.54", label: "Current CGPA" },
-]
+  { value: "15+", label: "Projects Built" },
+  { value: "15+", label: "DSA Problems" },
+  { value: "20+", label: "Students Taught" },
+  { value: "6.54", label: "Current CGPA" },
+];
 
 export const skills = [
   {
     title: "Languages",
-    items: ["JavaScript", "Python", "Java(basics)", "PHP(basics)"],
+    items: [
+      "JavaScript",
+      "TypeScript",
+      "Python",
+      "Java(basics)",
+      "PHP(basics)",
+    ],
   },
   {
     title: "Frontend",
@@ -53,7 +60,7 @@ export const skills = [
   },
   {
     title: "Data",
-    items: ["MongoDB", "Mongoose", "MongoDB Atlas"],
+    items: ["MongoDB", "SQL", "PostgreSQL", "Mongoose", "MongoDB Atlas"],
   },
   {
     title: "Web3",
@@ -63,11 +70,26 @@ export const skills = [
     title: "Tools",
     items: ["Git", "GitHub", "Postman", "Linux", "VS Code", "Vite"],
   },
-]
-
-
+];
 
 export const projects = [
+  {
+    title: "College ERP Management",
+    category: "PERN Stack Application",
+    description:
+      "A role-based college management system to handle students, employees, courses and departments — built and deployed end to end.",
+    image: collegeERPImage,
+    accent: "from-amber-500 to-cyan-400",
+    tech: ["React", "Node.js", "Express.js", "SQL(mysql12)", "Tailwind CSS"],
+    github:
+      "https://github.com/Gautam-Shende/College_ERP_Management_System.git",
+    demo: "https://college-erp-management-system-omega.vercel.app/login",
+    highlights: [
+      "Authentication system",
+      "Principal dashboard",
+      "Students tracking",
+    ],
+  },
   {
     title: "Visitor Management System",
     category: "MERN Stack Application",
@@ -75,13 +97,7 @@ export const projects = [
       "A smart visitor management system with visitor approvals, authentication, dashboard analytics, and secure entry tracking workflows.",
     image: visitorImage,
     accent: "from-sky-500 to-cyan-400",
-    tech: [
-      "React",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "Tailwind CSS",
-    ],
+    tech: ["React", "Node.js", "Express.js", "MongoDB", "Tailwind CSS"],
     github: "https://github.com/Gautam-Shende/MERN_Visitor_Management_.git",
     demo: "https://mern-visitor-management-frontend.vercel.app/login",
     highlights: [
@@ -98,12 +114,7 @@ export const projects = [
       "A digital platform for rural governance services including certificates, announcements, grievance management, and citizen access.",
     image: egramImage,
     accent: "from-emerald-500 to-lime-400",
-    tech: [
-      "React",
-      "Firebase",
-      "Tailwind CSS",
-      "Framer Motion",
-    ],
+    tech: ["React", "Firebase", "Tailwind CSS", "Framer Motion"],
     github: "https://github.com/Gautam-Shende/e-grampanchayat",
     demo: "https://e-grampanchayat-1de48.firebaseapp.com/",
     highlights: [
@@ -118,22 +129,12 @@ export const projects = [
     category: "E-Commerce Platform",
     description:
       "A modern multi-vendor shopping platform where merchants can manage products and customers can explore, order, and manage carts seamlessly.",
-     image: supermallImage,
+    image: supermallImage,
     accent: "from-indigo-500 to-purple-500",
-    tech: [
-      "React",
-      "Vite",
-      "Tailwind CSS",
-      "Firebase",
-      "Framer Motion",
-    ],
+    tech: ["React", "Vite", "Tailwind CSS", "Firebase", "Framer Motion"],
     github: "https://github.com/Gautam-Shende/super-mall-application",
     demo: "https://super-mall-ad4ef.firebaseapp.com/",
-    highlights: [
-      "Merchant dashboard",
-      "Cart functionality",
-      "Responsive UI",
-    ],
+    highlights: ["Merchant dashboard", "Cart functionality", "Responsive UI"],
   },
 
   {
@@ -141,7 +142,7 @@ export const projects = [
     category: "Frontend Portfolio Experience",
     description:
       "An interactive 3D portfolio with smooth animations, modern UI, dark mode, and immersive developer showcase experience.",
-     image: portfolio3dImage,
+    image: portfolio3dImage,
     accent: "from-violet-500 to-fuchsia-500",
     tech: [
       "React",
@@ -158,12 +159,13 @@ export const projects = [
       "Modern responsive UI",
     ],
   },
-]
+];
 
 export const experiences = [
   {
     role: "Frontend Development Intern",
     company: "Unified Mentors pvt. ltd",
+    certificate: "https://drive.google.com/file/d/1qH98pNWSR2CO62sPHicQavAPnY4Jwlgm/view",
     period: "Apr 2025 - Jul 2025",
     location: "Hariyana, India, Remote",
     points: [
@@ -173,18 +175,19 @@ export const experiences = [
     ],
   },
   {
-  role: "MERN Stack Development Trainee",
-  company: "Tude Dude Online Learning Platform",
-  period: "Dec 2025 - Jul 2026",
-  location: "India, Remote",
-  points: [
-    "Completed hands-on training in MERN Stack development including MongoDB, Express.js, React.js, and Node.js.",
-    "Built responsive full stack web applications with authentication, REST APIs, and dynamic dashboards.",
-    "Improved frontend performance, responsive design, and cross-browser compatibility through real-world projects.",
-  ],
-},
- 
-]
+    role: "MERN Stack Development Trainee",
+    company: "Tude Dude Online Learning Platform",
+    certificate:
+      "https://drive.google.com/file/d/1b619nqe2Gii5DQyzlEBI3uKN1eT26ZbC/view",
+    period: "Dec 2025 - Jul 2026",
+    location: "India, Remote",
+    points: [
+      "Completed hands-on training in MERN Stack development including MongoDB, Express.js, React.js, and Node.js.",
+      "Built responsive full stack web applications with authentication, REST APIs, and dynamic dashboards.",
+      "Improved frontend performance, responsive design, and cross-browser compatibility through real-world projects.",
+    ],
+  },
+];
 
 export const education = [
   {
@@ -199,6 +202,6 @@ export const education = [
     school: "TudeDude Online Learning Platform..",
     period: "2025 - 2026",
     detail:
-       "Completed practical training in MERN Stack Development with hands-on experience in MongoDB, Express.js, React.js, and Node.js. Built responsive full stack applications, REST APIs, authentication systems, and modern user interfaces using industry-standard development practices."
-    }
-]
+      "Completed practical training in MERN Stack Development with hands-on experience in MongoDB, Express.js, React.js, and Node.js. Built responsive full stack applications, REST APIs, authentication systems, and modern user interfaces using industry-standard development practices.",
+  },
+];
